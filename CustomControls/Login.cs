@@ -76,6 +76,7 @@ namespace CustomControls
             if (table.Rows.Count > 0)
             {
                 /// прячет данное окно и открывает окно меню
+                DataBank.TextFio = LoginLB.Texts;
                 this.Hide();
                 Menu menu = new Menu();
                 menu.Show();
@@ -103,6 +104,30 @@ namespace CustomControls
         private void CloseButton_MouseDown(object sender, MouseEventArgs e)
         {
             CloseButton.ForeColor = Color.FromArgb(41, 49, 51);
+        }
+
+        private void IconButton1_Click(object sender, EventArgs e)
+        {
+            PassLB.PasswordChar = false;
+        }
+
+        private void IconButton2_Click(object sender, EventArgs e)
+        {
+            PassLB.PasswordChar = true;
+        }
+
+        private void IconPictureBox1_Click(object sender, EventArgs e)
+        {
+            PassLB.PasswordChar = true;
+            iconPictureBox1.Visible = false;
+            iconPictureBox2.Visible = true;
+        }
+
+        private void IconPictureBox2_Click(object sender, EventArgs e)
+        {
+            PassLB.PasswordChar = false;
+            iconPictureBox1.Visible = true;
+            iconPictureBox2.Visible = false;
         }
     }
 }

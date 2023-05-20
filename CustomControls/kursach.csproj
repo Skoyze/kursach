@@ -72,6 +72,7 @@
   <ItemGroup>
     <Compile Include="Animation\Animation.cs" />
     <Compile Include="Animation\Animator.cs" />
+    <Compile Include="DataBank.cs" />
     <Compile Include="Datebase.cs" />
     <Compile Include="FlatColors.cs" />
     <Compile Include="Forms\FormClear.cs">
@@ -91,12 +92,6 @@
     </Compile>
     <Compile Include="Forms\FormNews.Designer.cs">
       <DependentUpon>FormNews.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FormNews2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormNews2.Designer.cs">
-      <DependentUpon>FormNews2.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormReadyDgvr.cs">
       <SubType>Form</SubType>
@@ -204,9 +199,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormNews.resx">
       <DependentUpon>FormNews.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormNews2.resx">
-      <DependentUpon>FormNews2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormReadyDgvr.resx">
       <DependentUpon>FormReadyDgvr.cs</DependentUpon>

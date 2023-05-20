@@ -161,14 +161,43 @@ namespace CustomControls
             closeFormButton.Show();
         }
 
-        private void IconButton4_Click(object sender, EventArgs e)
+
+        private void Menu_Load(object sender, EventArgs e)
         {
+            nameCl.Text = DataBank.TextFio;
+            if (nameCl.Text == "RomanovDI")
+            {
+                nameCl.Text = "Дмитрий!";
+            }
 
         }
 
-        private void IconButton4_Click_1(object sender, EventArgs e)
+        private void IconButton4_Click(object sender, EventArgs e)
         {
+            Open_Dropdown2(rjDropdownMenu1, sender);
+            iconButton4.BackColor = Color.FromArgb(26, 26, 52);
+        }
 
+        private void Open_Dropdown1(RJDropdownMenu dropdownMenu, object sender)
+        {
+            Control control = (Control)sender;
+            dropdownMenu.VisibleChanged += new EventHandler((sender2, ev)
+              => DropdownMenu_VisibleChanged(sender2, ev, control));
+            dropdownMenu.Show(control, control.Width, 0);
+        }
+
+        private void Open_Dropdown2(RJDropdownMenu dropdownMenu, object sender)
+        {
+            Control control = (Control)sender;
+            dropdownMenu.VisibleChanged += new EventHandler((sender2, ev)
+              => DropdownMenu_VisibleChanged(sender2, ev, control));
+            dropdownMenu.Show(control, control.Width - dropdownMenu.Width, control.Height);
+        }
+
+        private void НастройкиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenNewForm(new FormNews(), sender);
+            closeFormButton.Show();
         }
     }
 }
