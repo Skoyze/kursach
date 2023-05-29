@@ -131,12 +131,13 @@
             this.nameCl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(52)))));
             this.nameCl.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.nameCl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(149)))), ((int)(((byte)(183)))));
-            this.nameCl.Location = new System.Drawing.Point(56, 23);
+            this.nameCl.Location = new System.Drawing.Point(0, 23);
             this.nameCl.Name = "nameCl";
-            this.nameCl.Size = new System.Drawing.Size(106, 27);
+            this.nameCl.Size = new System.Drawing.Size(156, 27);
             this.nameCl.TabIndex = 7;
             this.nameCl.Text = "Дмитрий!";
             this.nameCl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.nameCl.Click += new System.EventHandler(this.NameCl_Click);
             // 
             // panelMenuDown
             // 
@@ -159,7 +160,7 @@
             this.labelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
             this.labelMenu.Font = new System.Drawing.Font("Georgia", 20.25F);
             this.labelMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(149)))), ((int)(((byte)(183)))));
-            this.labelMenu.Location = new System.Drawing.Point(3, 401);
+            this.labelMenu.Location = new System.Drawing.Point(3, 90);
             this.labelMenu.Name = "labelMenu";
             this.labelMenu.Size = new System.Drawing.Size(220, 54);
             this.labelMenu.TabIndex = 0;
@@ -179,7 +180,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::CustomControls.Properties.Resources.logo;
+            this.pictureBox3.Image = global::Osk.Properties.Resources.logo;
             this.pictureBox3.Location = new System.Drawing.Point(0, 0);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(159, 40);
@@ -302,6 +303,10 @@
             this.CloseButton.TabIndex = 1;
             this.CloseButton.Text = "X";
             this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
+            this.CloseButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CloseButton_MouseDown);
+            this.CloseButton.MouseEnter += new System.EventHandler(this.CloseButton_MouseEnter);
+            this.CloseButton.MouseLeave += new System.EventHandler(this.CloseButton_MouseLeave);
+            this.CloseButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.CloseButton_MouseUp);
             // 
             // panelMenu
             // 
@@ -321,7 +326,7 @@
             this.Privet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(149)))), ((int)(((byte)(183)))));
             this.Privet.Location = new System.Drawing.Point(3, 3);
             this.Privet.Name = "Privet";
-            this.Privet.Size = new System.Drawing.Size(153, 23);
+            this.Privet.Size = new System.Drawing.Size(123, 23);
             this.Privet.TabIndex = 8;
             this.Privet.Text = "Приветсвуем";
             // 
@@ -343,13 +348,13 @@
             this.rjDropdownMenu1.MenuItemTextColor = System.Drawing.Color.Empty;
             this.rjDropdownMenu1.Name = "rjDropdownMenu1";
             this.rjDropdownMenu1.PrimaryColor = System.Drawing.Color.Empty;
-            this.rjDropdownMenu1.Size = new System.Drawing.Size(181, 48);
+            this.rjDropdownMenu1.Size = new System.Drawing.Size(135, 26);
             // 
             // настройкиToolStripMenuItem
             // 
-            this.настройкиToolStripMenuItem.Image = global::CustomControls.Properties.Resources.pass5;
+            this.настройкиToolStripMenuItem.Image = global::Osk.Properties.Resources.gear20;
             this.настройкиToolStripMenuItem.Name = "настройкиToolStripMenuItem";
-            this.настройкиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.настройкиToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.настройкиToolStripMenuItem.Text = "Настройки";
             this.настройкиToolStripMenuItem.Click += new System.EventHandler(this.НастройкиToolStripMenuItem_Click);
             // 

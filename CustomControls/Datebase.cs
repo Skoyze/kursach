@@ -9,7 +9,7 @@ namespace CustomControls
 {
     class Datebase
     {
-        MySqlConnection connection = new MySqlConnection("server=cfif31.ru;port=3306;username=ISPr23-36_SavelevVA;password=ISPr23-36_SavelevVA;database=ISPr23-36_SavelevVA_dgvr");
+        MySqlConnection connection = new MySqlConnection("server=cfif31.ru;port=3306;username=ISPr23-36_SavelevVA;password=ISPr23-36_SavelevVA;database=ISPr23-36_SavelevVA_dgvr;Allow User Variables=True");
 
         public void openConnection()
         {

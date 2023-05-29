@@ -19,6 +19,7 @@ namespace CustomControls.RJControls
         private Color borderColor = Color.MediumSlateBlue;
         private Color borderFocusColor = Color.HotPink;
         private int borderSize = 2;
+        private int maxLength = 300;
         private bool underlinedStyle = false;
         private bool isFocused = false;
 
@@ -59,6 +60,9 @@ namespace CustomControls.RJControls
             set { borderFocusColor = value; }
         }
 
+        
+            
+
         [Category("RJ Code Advance")]
         public int BorderSize
         {
@@ -93,6 +97,17 @@ namespace CustomControls.RJControls
                 isPasswordChar = value;
                 if (!isPlaceholder)
                     textBox1.UseSystemPasswordChar = value;
+            }
+        }
+
+        public int MaxLenght
+        {
+            get { return maxLength; }
+            set
+            {
+                maxLength = value;
+                if (!isPlaceholder)
+                    textBox1.MaxLength = value;
             }
         }
 

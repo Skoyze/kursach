@@ -21,7 +21,7 @@ namespace CustomControls.RJControls
 
         //-> Other Values
         private bool droppedDown = false;
-        private Image calendarIcon = Properties.Resources.calendarWhite;
+        private Image calendarIcon = Osk.Properties.Resources.calendarWhite;
         private RectangleF iconButtonArea;
         private const int calendarIconWidth = 34;
         private const int arrowIconWidth = 17;
@@ -34,8 +34,8 @@ namespace CustomControls.RJControls
             {
                 skinColor = value;
                 if (skinColor.GetBrightness() >= 0.6F)
-                    calendarIcon = Properties.Resources.calendarDark;
-                else calendarIcon = Properties.Resources.calendarWhite;
+                    calendarIcon = Osk.Properties.Resources.calendarDark;
+                else calendarIcon = Osk.Properties.Resources.calendarWhite;
                 this.Invalidate();
             }
         }

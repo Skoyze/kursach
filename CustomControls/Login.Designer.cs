@@ -88,7 +88,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::CustomControls.Properties.Resources.logo;
+            this.pictureBox3.Image = global::Osk.Properties.Resources.logo;
             this.pictureBox3.Location = new System.Drawing.Point(0, 0);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(159, 40);
@@ -119,7 +119,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(154)))), ((int)(((byte)(170)))));
-            this.pictureBox2.Image = global::CustomControls.Properties.Resources.pass5;
+            this.pictureBox2.Image = global::Osk.Properties.Resources.pass5;
             this.pictureBox2.Location = new System.Drawing.Point(105, 318);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(58, 58);
@@ -130,7 +130,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(154)))), ((int)(((byte)(170)))));
-            this.pictureBox1.Image = global::CustomControls.Properties.Resources.Login;
+            this.pictureBox1.Image = global::Osk.Properties.Resources.Login;
             this.pictureBox1.Location = new System.Drawing.Point(111, 212);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(48, 48);

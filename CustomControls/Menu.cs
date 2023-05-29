@@ -131,7 +131,7 @@ namespace CustomControls
 
         private void IconButton1_Click(object sender, EventArgs e)
         {
-            OpenNewForm(new Login(), sender);
+            OpenNewForm(new FormNewDgvr(), sender);
             closeFormButton.Show();
         }
 
@@ -151,7 +151,7 @@ namespace CustomControls
 
         private void IconButton2_Click(object sender, EventArgs e)
         {
-            //OpenNewForm(new qwer(), sender);
+            OpenNewForm(new FormReadyDgvr(), sender);
             closeFormButton.Show();
         }
 
@@ -167,9 +167,21 @@ namespace CustomControls
             nameCl.Text = DataBank.TextFio;
             if (nameCl.Text == "RomanovDI")
             {
+                DataBank.TextFio = nameCl.Text;
                 nameCl.Text = "Дмитрий!";
             }
 
+            if (nameCl.Text == "AlexandrovaTA")
+            {
+                DataBank.TextFio = nameCl.Text;
+                nameCl.Text = "Татьяна!";
+            }
+
+            if (nameCl.Text == "ZaxarovaOV")
+            {
+                DataBank.TextFio = nameCl.Text;
+                nameCl.Text = "Ольга!";
+            }
         }
 
         private void IconButton4_Click(object sender, EventArgs e)
@@ -189,15 +201,43 @@ namespace CustomControls
         private void Open_Dropdown2(RJDropdownMenu dropdownMenu, object sender)
         {
             Control control = (Control)sender;
-            dropdownMenu.VisibleChanged += new EventHandler((sender2, ev)
-              => DropdownMenu_VisibleChanged(sender2, ev, control));
             dropdownMenu.Show(control, control.Width - dropdownMenu.Width, control.Height);
         }
 
         private void НастройкиToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OpenNewForm(new FormNews(), sender);
+            OpenNewForm(new FormGearUser(), sender);
             closeFormButton.Show();
+        }
+
+        private void NameCl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void DateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void CloseButton_MouseEnter(object sender, EventArgs e)
+        {
+            CloseButton.ForeColor = Color.FromArgb(20, Color.Silver);
+        }
+
+        private void CloseButton_MouseLeave(object sender, EventArgs e)
+        {
+            CloseButton.ForeColor = Color.FromArgb(65, 74, 76);
+        }
+
+        private void CloseButton_MouseUp(object sender, MouseEventArgs e)
+        {
+            CloseButton.ForeColor = Color.FromArgb(41, 49, 51);
+        }
+
+        private void CloseButton_MouseDown(object sender, MouseEventArgs e)
+        {
+            CloseButton.ForeColor = Color.FromArgb(41, 49, 51);
         }
     }
 }

@@ -38,7 +38,7 @@
             // cards1
             // 
             this.cards1.BackColor = System.Drawing.Color.Silver;
-            this.cards1.BackColorCurtain = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(83)))));
+            this.cards1.BackColorCurtain = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(52)))));
             this.cards1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cards1.Font = new System.Drawing.Font("Georgia", 14F);
             this.cards1.FontDescrition = new System.Drawing.Font("Georgia", 16F);
@@ -57,7 +57,7 @@
             // cards3
             // 
             this.cards3.BackColor = System.Drawing.Color.Silver;
-            this.cards3.BackColorCurtain = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(83)))));
+            this.cards3.BackColorCurtain = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(52)))));
             this.cards3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cards3.Font = new System.Drawing.Font("Georgia", 14F);
             this.cards3.FontDescrition = new System.Drawing.Font("Georgia", 16F);
@@ -75,7 +75,7 @@
             // cards2
             // 
             this.cards2.BackColor = System.Drawing.Color.Silver;
-            this.cards2.BackColorCurtain = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(83)))));
+            this.cards2.BackColorCurtain = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(52)))));
             this.cards2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cards2.Font = new System.Drawing.Font("Georgia", 14F);
             this.cards2.FontDescrition = new System.Drawing.Font("Georgia", 16F);
@@ -93,7 +93,7 @@
             // cards4
             // 
             this.cards4.BackColor = System.Drawing.Color.Silver;
-            this.cards4.BackColorCurtain = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(83)))));
+            this.cards4.BackColorCurtain = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(52)))));
             this.cards4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cards4.Font = new System.Drawing.Font("Georgia", 14F);
             this.cards4.FontDescrition = new System.Drawing.Font("Georgia", 16F);
