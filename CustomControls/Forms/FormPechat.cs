@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Osk;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -76,6 +77,33 @@ namespace CustomControls.Forms
         private void Okno_MouseDown(object sender, MouseEventArgs e)
         {
             lastPoint = new Point(e.X, e.Y);
+        }
+
+        private void FamSobst_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ImyaSobst_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void FormPechat_Load(object sender, EventArgs e)
+        {
+            imyaSobst.Text = DataStrx.IMYASOBST;
+            famSobst.Text = DataStrx.FAMSOBST;
+            otchestvoSobst.Text = DataStrx.OTCHESTVOSOBST;
+            imyaSrtx.Text = DataStrx.IMYASTRX;
+            famStrx.Text = DataStrx.FAMSTRX;
+            otchestvoStrx.Text = DataStrx.OTCHESTVOSTRX;
+            vin.Text = DataStrx.VIN;
+            vidDoc.Text = DataStrx.VIDDOCTS;
+            nomerDoc.Text = DataStrx.DOCSERIA;
+            seriaDoc.Text = DataStrx.DOCNOMER;
+            seriaVu.Text = DataStrx.VUSERIA;
+            nomerVu.Text = DataStrx.VUNOMER;
+            stoim.Text = DataStrx.STOIM;
         }
     }
 }

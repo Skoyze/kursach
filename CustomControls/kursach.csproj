@@ -104,6 +104,7 @@
     <Compile Include="Animation\Animation.cs" />
     <Compile Include="Animation\Animator.cs" />
     <Compile Include="DataBank.cs" />
+    <Compile Include="DataStrx.cs" />
     <Compile Include="Datebase.cs" />
     <Compile Include="FlatColors.cs" />
     <Compile Include="Forms\FormClear.cs">

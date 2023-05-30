@@ -689,6 +689,7 @@
             this.rjTextBoxVINTS.TabIndex = 10;
             this.rjTextBoxVINTS.Texts = "";
             this.rjTextBoxVINTS.UnderlinedStyle = false;
+            this.rjTextBoxVINTS._TextChanged += new System.EventHandler(this.RjTextBoxVINTS__TextChanged);
             // 
             // rjTextBoxNomerGosTS
             // 
@@ -1048,7 +1049,6 @@
             this.rjTextBoxSnilsSobst.TabIndex = 5;
             this.rjTextBoxSnilsSobst.Texts = "";
             this.rjTextBoxSnilsSobst.UnderlinedStyle = false;
-            this.rjTextBoxSnilsSobst._TextChanged += new System.EventHandler(this.RjTextBoxSnilsSobst__TextChanged);
             this.rjTextBoxSnilsSobst.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.RjTextBoxSnilsSobst_KeyPress);
             // 
             // rjTextBoxImyaSobst
@@ -1073,7 +1073,7 @@
             this.rjTextBoxImyaSobst.TabIndex = 5;
             this.rjTextBoxImyaSobst.Texts = "";
             this.rjTextBoxImyaSobst.UnderlinedStyle = false;
-            this.rjTextBoxImyaSobst.Load += new System.EventHandler(this.RjTextBoxImyaSobst_Load);
+            this.rjTextBoxImyaSobst._TextChanged += new System.EventHandler(this.RjTextBoxImyaSobst__TextChanged);
             this.rjTextBoxImyaSobst.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.RjTextBoxImyaSobst_KeyPress);
             // 
             // rjTextBoxPochtaKontDan
@@ -1192,6 +1192,7 @@
             this.rjTextBoxOtchestSobst.TabIndex = 5;
             this.rjTextBoxOtchestSobst.Texts = "";
             this.rjTextBoxOtchestSobst.UnderlinedStyle = false;
+            this.rjTextBoxOtchestSobst._TextChanged += new System.EventHandler(this.RjTextBoxOtchestSobst__TextChanged);
             this.rjTextBoxOtchestSobst.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.RjTextBoxImyaSobst_KeyPress);
             // 
             // rjTextBoxKodDocLichn
@@ -1288,6 +1289,7 @@
             this.rjTextBoxFamSobst.TabIndex = 5;
             this.rjTextBoxFamSobst.Texts = "";
             this.rjTextBoxFamSobst.UnderlinedStyle = false;
+            this.rjTextBoxFamSobst._TextChanged += new System.EventHandler(this.RjTextBoxFamSobst__TextChanged);
             this.rjTextBoxFamSobst.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.RjTextBoxImyaSobst_KeyPress);
             // 
             // rjDatePickerDeistStrx
@@ -1500,6 +1502,7 @@
             this.rjTextBoxImyaVoditel.TabIndex = 17;
             this.rjTextBoxImyaVoditel.Texts = "";
             this.rjTextBoxImyaVoditel.UnderlinedStyle = false;
+            this.rjTextBoxImyaVoditel._TextChanged += new System.EventHandler(this.RjTextBoxImyaVoditel__TextChanged);
             this.rjTextBoxImyaVoditel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.RjTextBoxImyaSobst_KeyPress);
             // 
             // rjTextBoxOtchestVoditel
@@ -1524,6 +1527,7 @@
             this.rjTextBoxOtchestVoditel.TabIndex = 18;
             this.rjTextBoxOtchestVoditel.Texts = "";
             this.rjTextBoxOtchestVoditel.UnderlinedStyle = false;
+            this.rjTextBoxOtchestVoditel._TextChanged += new System.EventHandler(this.RjTextBoxOtchestVoditel__TextChanged);
             this.rjTextBoxOtchestVoditel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.RjTextBoxImyaSobst_KeyPress);
             // 
             // rjTextBoxFamVoditel
@@ -1548,6 +1552,7 @@
             this.rjTextBoxFamVoditel.TabIndex = 19;
             this.rjTextBoxFamVoditel.Texts = "";
             this.rjTextBoxFamVoditel.UnderlinedStyle = false;
+            this.rjTextBoxFamVoditel._TextChanged += new System.EventHandler(this.RjTextBoxFamVoditel__TextChanged);
             this.rjTextBoxFamVoditel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.RjTextBoxImyaSobst_KeyPress);
             // 
             // labelImyaVoditel
@@ -1763,6 +1768,7 @@
             this.rjTextBoxSeriaVUVoditel.TabIndex = 19;
             this.rjTextBoxSeriaVUVoditel.Texts = "";
             this.rjTextBoxSeriaVUVoditel.UnderlinedStyle = false;
+            this.rjTextBoxSeriaVUVoditel._TextChanged += new System.EventHandler(this.RjTextBoxSeriaVUVoditel__TextChanged);
             this.rjTextBoxSeriaVUVoditel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.RjTextBoxSnilsSobst_KeyPress);
             // 
             // labelNomerVUVoditel
@@ -1798,6 +1804,7 @@
             this.rjTextBoxNomerVUVoditel.TabIndex = 19;
             this.rjTextBoxNomerVUVoditel.Texts = "";
             this.rjTextBoxNomerVUVoditel.UnderlinedStyle = false;
+            this.rjTextBoxNomerVUVoditel._TextChanged += new System.EventHandler(this.RjTextBoxNomerVUVoditel__TextChanged);
             this.rjTextBoxNomerVUVoditel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.RjTextBoxSnilsSobst_KeyPress);
             // 
             // labelMainIdenTS
@@ -1930,6 +1937,7 @@
             this.rjComboBoxTipDocTS.Size = new System.Drawing.Size(291, 30);
             this.rjComboBoxTipDocTS.TabIndex = 13;
             this.rjComboBoxTipDocTS.Texts = "";
+            this.rjComboBoxTipDocTS.OnSelectedIndexChanged += new System.EventHandler(this.RjComboBoxTipDocTS_OnSelectedIndexChanged);
             // 
             // labelDateVidachDocTS
             // 
@@ -1989,6 +1997,7 @@
             this.rjTextBoxSeriaDocTS.TabIndex = 19;
             this.rjTextBoxSeriaDocTS.Texts = "";
             this.rjTextBoxSeriaDocTS.UnderlinedStyle = false;
+            this.rjTextBoxSeriaDocTS._TextChanged += new System.EventHandler(this.RjTextBoxSeriaDocTS__TextChanged);
             this.rjTextBoxSeriaDocTS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.RjTextBoxSnilsSobst_KeyPress);
             // 
             // labelNomerDocTS
@@ -2068,6 +2077,7 @@
             this.textBoxStoimOsagoItog.TabIndex = 19;
             this.textBoxStoimOsagoItog.Texts = "";
             this.textBoxStoimOsagoItog.UnderlinedStyle = false;
+            this.textBoxStoimOsagoItog._TextChanged += new System.EventHandler(this.TextBoxStoimOsagoItog__TextChanged);
             // 
             // buttonSaveDgvrItog
             // 
@@ -2111,6 +2121,7 @@
             this.rjTextBoxNomerDocTS.TabIndex = 19;
             this.rjTextBoxNomerDocTS.Texts = "";
             this.rjTextBoxNomerDocTS.UnderlinedStyle = false;
+            this.rjTextBoxNomerDocTS._TextChanged += new System.EventHandler(this.RjTextBoxNomerDocTS__TextChanged);
             this.rjTextBoxNomerDocTS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.RjTextBoxSnilsSobst_KeyPress);
             // 
             // buttonPechat

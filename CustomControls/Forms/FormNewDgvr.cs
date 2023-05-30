@@ -1,4 +1,5 @@
 ﻿using MySqlConnector;
+using Osk;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,6 +19,7 @@ namespace CustomControls.Forms
         public FormNewDgvr()
         {
             InitializeComponent();
+          
         }
 
         private void ButtonPrimerAdress_Click(object sender, EventArgs e)
@@ -440,6 +442,7 @@ namespace CustomControls.Forms
 
         }
 
+
         private void RjTextBoxImyaSobst_KeyPress(object sender, KeyPressEventArgs e)
         {
             string Symbol = e.KeyChar.ToString();
@@ -460,18 +463,83 @@ namespace CustomControls.Forms
             }
         }
 
-        private void RjTextBoxSnilsSobst__TextChanged(object sender, EventArgs e)
-        {
+        
             
+            
+            
+           
+            
+            
+            
+           
+           
+            
+           
+           
+
+        private void RjTextBoxImyaSobst__TextChanged(object sender, EventArgs e)
+        {
+            DataStrx.IMYASOBST = rjTextBoxImyaSobst.Texts;
         }
 
-        private void TextBox1_TextChanged(object sender, EventArgs e)
+        private void RjTextBoxFamSobst__TextChanged(object sender, EventArgs e)
         {
+            DataStrx.FAMSOBST = rjTextBoxFamSobst.Texts;
         }
 
-        private void RjTextBoxImyaSobst_Load(object sender, EventArgs e)
+        private void RjTextBoxOtchestSobst__TextChanged(object sender, EventArgs e)
         {
-            
+            DataStrx.OTCHESTVOSOBST = rjTextBoxOtchestSobst.Texts;
+        }
+
+        private void RjTextBoxVINTS__TextChanged(object sender, EventArgs e)
+        {
+            DataStrx.VIN = rjTextBoxVINTS.Texts;
+        }
+
+        private void RjTextBoxImyaVoditel__TextChanged(object sender, EventArgs e)
+        {
+            DataStrx.IMYASTRX = rjTextBoxImyaVoditel.Texts;
+        }
+
+        private void RjTextBoxFamVoditel__TextChanged(object sender, EventArgs e)
+        {
+            DataStrx.FAMSTRX = rjTextBoxFamVoditel.Texts;
+        }
+
+        private void RjTextBoxOtchestVoditel__TextChanged(object sender, EventArgs e)
+        {
+            DataStrx.OTCHESTVOSTRX = rjTextBoxOtchestVoditel.Texts;
+        }
+
+        private void RjTextBoxSeriaVUVoditel__TextChanged(object sender, EventArgs e)
+        {
+            DataStrx.VUSERIA = rjTextBoxSeriaVUVoditel.Text;
+        }
+
+        private void RjTextBoxNomerVUVoditel__TextChanged(object sender, EventArgs e)
+        {
+            DataStrx.VUNOMER = rjTextBoxNomerVUVoditel.Texts;
+        }
+
+        private void RjComboBoxTipDocTS_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataStrx.VIDDOCTS = rjComboBoxTipDocTS.Texts;
+        }
+
+        private void RjTextBoxSeriaDocTS__TextChanged(object sender, EventArgs e)
+        {
+            DataStrx.DOCSERIA = rjTextBoxSeriaDocTS.Texts;
+        }
+
+        private void RjTextBoxNomerDocTS__TextChanged(object sender, EventArgs e)
+        {
+            DataStrx.DOCNOMER = rjTextBoxNomerDocTS.Texts;
+        }
+
+        private void TextBoxStoimOsagoItog__TextChanged(object sender, EventArgs e)
+        {
+            DataStrx.STOIM = textBoxStoimOsagoItog.Texts;
         }
     }
 
