@@ -97,13 +97,19 @@ namespace CustomControls.Forms
             imyaSrtx.Text = DataStrx.IMYASTRX;
             famStrx.Text = DataStrx.FAMSTRX;
             otchestvoStrx.Text = DataStrx.OTCHESTVOSTRX;
+            imya.Text = DataStrx.IMYASTRX;
+            fam.Text = DataStrx.FAMSTRX;
+            otchestvo.Text = DataStrx.OTCHESTVOSTRX;
             vin.Text = DataStrx.VIN;
             vidDoc.Text = DataStrx.VIDDOCTS;
-            nomerDoc.Text = DataStrx.DOCSERIA;
-            seriaDoc.Text = DataStrx.DOCNOMER;
+            markModel.Text = DataStrx.MARKAMODEL;
+            gosNomer.Text = DataStrx.GOSNOMER;
+            seriaDoc.Text = DataStrx.DOCSERIA;
+            nomerDoc.Text = DataStrx.DOCNOMER;
             seriaVu.Text = DataStrx.VUSERIA;
             nomerVu.Text = DataStrx.VUNOMER;
             stoim.Text = DataStrx.STOIM;
+            dataDeist.Text = DataStrx.DEISTDATA;
         }
     }
 }

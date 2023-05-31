@@ -514,7 +514,7 @@ namespace CustomControls.Forms
 
         private void RjTextBoxSeriaVUVoditel__TextChanged(object sender, EventArgs e)
         {
-            DataStrx.VUSERIA = rjTextBoxSeriaVUVoditel.Text;
+            DataStrx.VUSERIA = rjTextBoxSeriaVUVoditel.Texts;
         }
 
         private void RjTextBoxNomerVUVoditel__TextChanged(object sender, EventArgs e)
@@ -540,6 +540,21 @@ namespace CustomControls.Forms
         private void TextBoxStoimOsagoItog__TextChanged(object sender, EventArgs e)
         {
             DataStrx.STOIM = textBoxStoimOsagoItog.Texts;
+        }
+
+        private void RjTextBoxMarkaModelPtsTS__TextChanged(object sender, EventArgs e)
+        {
+            DataStrx.MARKAMODEL = rjTextBoxMarkaModelPtsTS.Texts;
+        }
+
+        private void RjTextBoxNomerGosTS__TextChanged(object sender, EventArgs e)
+        {
+            DataStrx.GOSNOMER = rjTextBoxNomerGosTS.Texts;
+        }
+
+        private void LabelDatePickerDeistStrx_TextChanged(object sender, EventArgs e)
+        {
+            DataStrx.DEISTDATA = labelDatePickerDeistStrx.Text;
         }
     }
 

@@ -48,10 +48,14 @@
             this.imyaSobst = new System.Windows.Forms.Label();
             this.famSobst = new System.Windows.Forms.Label();
             this.otchestvoSobst = new System.Windows.Forms.Label();
-            this.rjButtonPechatDgvr = new CustomControls.RJControls.RJButton();
             this.seriaDoc = new System.Windows.Forms.Label();
             this.nomerDoc = new System.Windows.Forms.Label();
             this.vidDoc = new System.Windows.Forms.Label();
+            this.markModel = new System.Windows.Forms.Label();
+            this.gosNomer = new System.Windows.Forms.Label();
+            this.X = new System.Windows.Forms.Label();
+            this.dataDeist = new System.Windows.Forms.Label();
+            this.rjButtonPechatDgvr = new CustomControls.RJControls.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Okno.SuspendLayout();
             this.SuspendLayout();
@@ -158,7 +162,7 @@
             // famStrx
             // 
             this.famStrx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.famStrx.Location = new System.Drawing.Point(80, 618);
+            this.famStrx.Location = new System.Drawing.Point(81, 617);
             this.famStrx.Name = "famStrx";
             this.famStrx.Size = new System.Drawing.Size(89, 17);
             this.famStrx.TabIndex = 7;
@@ -185,7 +189,7 @@
             // seriaVu
             // 
             this.seriaVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.seriaVu.Location = new System.Drawing.Point(628, 621);
+            this.seriaVu.Location = new System.Drawing.Point(627, 620);
             this.seriaVu.Name = "seriaVu";
             this.seriaVu.Size = new System.Drawing.Size(89, 17);
             this.seriaVu.TabIndex = 7;
@@ -202,8 +206,8 @@
             // 
             // stoim
             // 
-            this.stoim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.stoim.Location = new System.Drawing.Point(175, 806);
+            this.stoim.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.stoim.Location = new System.Drawing.Point(175, 809);
             this.stoim.Name = "stoim";
             this.stoim.Size = new System.Drawing.Size(89, 17);
             this.stoim.TabIndex = 7;
@@ -241,6 +245,74 @@
             this.otchestvoSobst.Text = "OTCHESTVO";
             this.otchestvoSobst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // seriaDoc
+            // 
+            this.seriaDoc.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.seriaDoc.Location = new System.Drawing.Point(557, 473);
+            this.seriaDoc.Name = "seriaDoc";
+            this.seriaDoc.Size = new System.Drawing.Size(89, 17);
+            this.seriaDoc.TabIndex = 7;
+            this.seriaDoc.Text = "seriaDoc";
+            // 
+            // nomerDoc
+            // 
+            this.nomerDoc.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.nomerDoc.Location = new System.Drawing.Point(734, 473);
+            this.nomerDoc.Name = "nomerDoc";
+            this.nomerDoc.Size = new System.Drawing.Size(89, 17);
+            this.nomerDoc.TabIndex = 7;
+            this.nomerDoc.Text = "nomerDoc";
+            // 
+            // vidDoc
+            // 
+            this.vidDoc.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.vidDoc.Location = new System.Drawing.Point(165, 469);
+            this.vidDoc.Name = "vidDoc";
+            this.vidDoc.Size = new System.Drawing.Size(259, 17);
+            this.vidDoc.TabIndex = 7;
+            this.vidDoc.Text = "vidDoc";
+            // 
+            // markModel
+            // 
+            this.markModel.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.markModel.Location = new System.Drawing.Point(80, 423);
+            this.markModel.Name = "markModel";
+            this.markModel.Size = new System.Drawing.Size(175, 27);
+            this.markModel.TabIndex = 6;
+            this.markModel.Text = "markModel";
+            this.markModel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.markModel.Click += new System.EventHandler(this.FamSobst_Click);
+            // 
+            // gosNomer
+            // 
+            this.gosNomer.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gosNomer.Location = new System.Drawing.Point(680, 433);
+            this.gosNomer.Name = "gosNomer";
+            this.gosNomer.Size = new System.Drawing.Size(175, 25);
+            this.gosNomer.TabIndex = 6;
+            this.gosNomer.Text = "gosNomer";
+            this.gosNomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.gosNomer.Click += new System.EventHandler(this.FamSobst_Click);
+            // 
+            // X
+            // 
+            this.X.AutoSize = true;
+            this.X.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.X.Location = new System.Drawing.Point(473, 383);
+            this.X.Name = "X";
+            this.X.Size = new System.Drawing.Size(16, 16);
+            this.X.TabIndex = 8;
+            this.X.Text = "X";
+            // 
+            // dataDeist
+            // 
+            this.dataDeist.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dataDeist.Location = new System.Drawing.Point(211, 901);
+            this.dataDeist.Name = "dataDeist";
+            this.dataDeist.Size = new System.Drawing.Size(89, 17);
+            this.dataDeist.TabIndex = 7;
+            this.dataDeist.Text = "dataDeist";
+            // 
             // rjButtonPechatDgvr
             // 
             this.rjButtonPechatDgvr.BackColor = System.Drawing.Color.Gray;
@@ -261,42 +333,17 @@
             this.rjButtonPechatDgvr.UseVisualStyleBackColor = false;
             this.rjButtonPechatDgvr.Click += new System.EventHandler(this.rjButtonPechatDgvr_Click);
             // 
-            // seriaDoc
-            // 
-            this.seriaDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.seriaDoc.Location = new System.Drawing.Point(557, 473);
-            this.seriaDoc.Name = "seriaDoc";
-            this.seriaDoc.Size = new System.Drawing.Size(89, 17);
-            this.seriaDoc.TabIndex = 7;
-            this.seriaDoc.Text = "seriaDoc";
-            // 
-            // nomerDoc
-            // 
-            this.nomerDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.nomerDoc.Location = new System.Drawing.Point(734, 473);
-            this.nomerDoc.Name = "nomerDoc";
-            this.nomerDoc.Size = new System.Drawing.Size(89, 17);
-            this.nomerDoc.TabIndex = 7;
-            this.nomerDoc.Text = "nomerDoc";
-            // 
-            // vidDoc
-            // 
-            this.vidDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.vidDoc.Location = new System.Drawing.Point(165, 469);
-            this.vidDoc.Name = "vidDoc";
-            this.vidDoc.Size = new System.Drawing.Size(259, 17);
-            this.vidDoc.TabIndex = 7;
-            this.vidDoc.Text = "vidDoc";
-            // 
             // FormPechat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(952, 1061);
+            this.Controls.Add(this.X);
             this.Controls.Add(this.nomerVu);
             this.Controls.Add(this.seriaVu);
             this.Controls.Add(this.otchestvoStrx);
+            this.Controls.Add(this.dataDeist);
             this.Controls.Add(this.stoim);
             this.Controls.Add(this.imyaSrtx);
             this.Controls.Add(this.nomerDoc);
@@ -304,6 +351,8 @@
             this.Controls.Add(this.seriaDoc);
             this.Controls.Add(this.famStrx);
             this.Controls.Add(this.otchestvoSobst);
+            this.Controls.Add(this.gosNomer);
+            this.Controls.Add(this.markModel);
             this.Controls.Add(this.famSobst);
             this.Controls.Add(this.otchestvo);
             this.Controls.Add(this.imyaSobst);
@@ -322,6 +371,7 @@
             this.Okno.ResumeLayout(false);
             this.Okno.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -349,5 +399,9 @@
         private System.Windows.Forms.Label seriaDoc;
         private System.Windows.Forms.Label nomerDoc;
         private System.Windows.Forms.Label vidDoc;
+        private System.Windows.Forms.Label markModel;
+        private System.Windows.Forms.Label gosNomer;
+        private System.Windows.Forms.Label X;
+        private System.Windows.Forms.Label dataDeist;
     }
 }

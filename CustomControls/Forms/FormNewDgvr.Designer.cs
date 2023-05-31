@@ -713,6 +713,7 @@
             this.rjTextBoxNomerGosTS.TabIndex = 10;
             this.rjTextBoxNomerGosTS.Texts = "";
             this.rjTextBoxNomerGosTS.UnderlinedStyle = false;
+            this.rjTextBoxNomerGosTS._TextChanged += new System.EventHandler(this.RjTextBoxNomerGosTS__TextChanged);
             // 
             // rjTextBoxModelTS
             // 
@@ -759,6 +760,7 @@
             this.rjTextBoxMarkaModelPtsTS.TabIndex = 10;
             this.rjTextBoxMarkaModelPtsTS.Texts = "";
             this.rjTextBoxMarkaModelPtsTS.UnderlinedStyle = false;
+            this.rjTextBoxMarkaModelPtsTS._TextChanged += new System.EventHandler(this.RjTextBoxMarkaModelPtsTS__TextChanged);
             // 
             // rjComboBoxIspolTS
             // 
@@ -2154,6 +2156,7 @@
             this.labelDatePickerDeistStrx.TabIndex = 25;
             this.labelDatePickerDeistStrx.Text = "labelDate";
             this.labelDatePickerDeistStrx.Visible = false;
+            this.labelDatePickerDeistStrx.TextChanged += new System.EventHandler(this.LabelDatePickerDeistStrx_TextChanged);
             // 
             // labelDatePickerDateSobst
             // 
