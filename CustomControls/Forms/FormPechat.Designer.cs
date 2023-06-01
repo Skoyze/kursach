@@ -378,6 +378,7 @@
             this.Controls.Add(this.rjButtonPechatDgvr);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormPechat";
             this.Text = "Новый договор";
             this.Load += new System.EventHandler(this.FormPechat_Load);

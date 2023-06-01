@@ -28,27 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.jGradientPanel1 = new JGradient_Panel.JGradientPanel();
+            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.okno = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.CloseButton = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.LoginLB = new CustomControls.RJControls.RJTextBox();
             this.PassLB = new CustomControls.RJControls.RJTextBox();
             this.rjTextBox2 = new CustomControls.RJControls.RJTextBox();
             this.rjTextBox1 = new CustomControls.RJControls.RJTextBox();
             this.jGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.okno.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // jGradientPanel1
@@ -72,6 +73,36 @@
             this.jGradientPanel1.Name = "jGradientPanel1";
             this.jGradientPanel1.Size = new System.Drawing.Size(509, 664);
             this.jGradientPanel1.TabIndex = 0;
+            // 
+            // iconPictureBox2
+            // 
+            this.iconPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(154)))), ((int)(((byte)(170)))));
+            this.iconPictureBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(74)))), ((int)(((byte)(76)))));
+            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
+            this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(74)))), ((int)(((byte)(76)))));
+            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox2.IconSize = 40;
+            this.iconPictureBox2.Location = new System.Drawing.Point(366, 328);
+            this.iconPictureBox2.Name = "iconPictureBox2";
+            this.iconPictureBox2.Size = new System.Drawing.Size(40, 40);
+            this.iconPictureBox2.TabIndex = 23;
+            this.iconPictureBox2.TabStop = false;
+            this.iconPictureBox2.Click += new System.EventHandler(this.IconPictureBox2_Click);
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(154)))), ((int)(((byte)(170)))));
+            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(74)))), ((int)(((byte)(76)))));
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(74)))), ((int)(((byte)(76)))));
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 40;
+            this.iconPictureBox1.Location = new System.Drawing.Point(366, 328);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(40, 40);
+            this.iconPictureBox1.TabIndex = 22;
+            this.iconPictureBox1.TabStop = false;
+            this.iconPictureBox1.Click += new System.EventHandler(this.IconPictureBox1_Click);
             // 
             // okno
             // 
@@ -150,36 +181,6 @@
             this.label1.Text = "Вход в учетную запись b2b";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(154)))), ((int)(((byte)(170)))));
-            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(74)))), ((int)(((byte)(76)))));
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Eye;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(74)))), ((int)(((byte)(76)))));
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 40;
-            this.iconPictureBox1.Location = new System.Drawing.Point(366, 328);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(40, 40);
-            this.iconPictureBox1.TabIndex = 22;
-            this.iconPictureBox1.TabStop = false;
-            this.iconPictureBox1.Click += new System.EventHandler(this.IconPictureBox1_Click);
-            // 
-            // iconPictureBox2
-            // 
-            this.iconPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(154)))), ((int)(((byte)(170)))));
-            this.iconPictureBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(74)))), ((int)(((byte)(76)))));
-            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
-            this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(74)))), ((int)(((byte)(76)))));
-            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.IconSize = 40;
-            this.iconPictureBox2.Location = new System.Drawing.Point(366, 328);
-            this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(40, 40);
-            this.iconPictureBox2.TabIndex = 23;
-            this.iconPictureBox2.TabStop = false;
-            this.iconPictureBox2.Click += new System.EventHandler(this.IconPictureBox2_Click);
-            // 
             // rjButton1
             // 
             this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(67)))), ((int)(((byte)(68)))));
@@ -211,6 +212,7 @@
             this.LoginLB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.LoginLB.Location = new System.Drawing.Point(166, 216);
             this.LoginLB.Margin = new System.Windows.Forms.Padding(4);
+            this.LoginLB.MaxLenght = 300;
             this.LoginLB.Multiline = false;
             this.LoginLB.Name = "LoginLB";
             this.LoginLB.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -233,6 +235,7 @@
             this.PassLB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.PassLB.Location = new System.Drawing.Point(166, 325);
             this.PassLB.Margin = new System.Windows.Forms.Padding(4);
+            this.PassLB.MaxLenght = 300;
             this.PassLB.Multiline = false;
             this.PassLB.Name = "PassLB";
             this.PassLB.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -258,6 +261,7 @@
             this.rjTextBox2.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.rjTextBox2.Location = new System.Drawing.Point(97, 309);
             this.rjTextBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.rjTextBox2.MaxLenght = 300;
             this.rjTextBox2.Multiline = true;
             this.rjTextBox2.Name = "rjTextBox2";
             this.rjTextBox2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -283,6 +287,7 @@
             this.rjTextBox1.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.rjTextBox1.Location = new System.Drawing.Point(97, 199);
             this.rjTextBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.rjTextBox1.MaxLenght = 300;
             this.rjTextBox1.Multiline = true;
             this.rjTextBox1.Name = "rjTextBox1";
             this.rjTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -301,16 +306,17 @@
             this.ClientSize = new System.Drawing.Size(509, 664);
             this.Controls.Add(this.jGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
             this.Text = "Login";
             this.jGradientPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.okno.ResumeLayout(false);
             this.okno.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
