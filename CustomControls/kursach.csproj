@@ -70,7 +70,7 @@
       <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net45\FontAwesome.Sharp.dll</HintPath>
     </Reference>
     <Reference Include="JGradient Panel">
-      <HintPath>..\..\..\..\Desktop\Курсавая\asd\JGradient Panel.dll</HintPath>
+      <HintPath>Dll\JGradient Panel.dll</HintPath>
     </Reference>
     <Reference Include="MySqlConnector, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92, processorArchitecture=MSIL">
       <HintPath>..\packages\MySqlConnector.1.3.9\lib\net45\MySqlConnector.dll</HintPath>
@@ -315,6 +315,7 @@
     <Content Include="icon\logo.png" />
     <Content Include="icon\pass5.png" />
     <Content Include="icon\polisIspr.jpg" />
+    <Content Include="icon\polisnorm.jpg" />
     <Content Include="logo %281%29.ico" />
     <Content Include="logo3.ico" />
   </ItemGroup>
@@ -330,6 +331,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dll\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

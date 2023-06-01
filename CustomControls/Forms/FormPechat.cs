@@ -109,7 +109,14 @@ namespace CustomControls.Forms
             seriaVu.Text = DataStrx.VUSERIA;
             nomerVu.Text = DataStrx.VUNOMER;
             stoim.Text = DataStrx.STOIM;
+            stoim1.Text = DataStrx.STOIM;
             dataDeist.Text = DataStrx.DEISTDATA;
+            dataDeist1.Text = DataStrx.DEISTDATA;
+        }
+
+        private void Label1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
