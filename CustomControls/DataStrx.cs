@@ -26,5 +26,7 @@ namespace Osk
         public static string SDATA;
         public static string PODATA;
         public static string DEISTDATA;
+        
+    
     }
 }

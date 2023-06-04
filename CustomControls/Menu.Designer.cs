@@ -33,7 +33,6 @@
             this.panelMain = new System.Windows.Forms.Panel();
             this.closeFormButton = new FontAwesome.Sharp.IconButton();
             this.labelMain = new System.Windows.Forms.Label();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.nameCl = new System.Windows.Forms.Label();
             this.panelMenuDown = new System.Windows.Forms.Panel();
             this.labelMenu = new System.Windows.Forms.Label();
@@ -47,9 +46,11 @@
             this.CloseButton = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.Privet = new System.Windows.Forms.Label();
+            this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.rjDropdownMenu1 = new CustomControls.RJControls.RJDropdownMenu(this.components);
             this.настройкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.добавитьСтраховщикаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMain.SuspendLayout();
             this.panelMenuDown.SuspendLayout();
             this.oknoMal.SuspendLayout();
@@ -103,28 +104,6 @@
             this.labelMain.TabIndex = 0;
             this.labelMain.Text = "Главная";
             this.labelMain.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // iconButton4
-            // 
-            this.iconButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(52)))));
-            this.iconButton4.FlatAppearance.BorderSize = 0;
-            this.iconButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(52)))), ((int)(((byte)(183)))));
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.Font = new System.Drawing.Font("Georgia", 11.25F);
-            this.iconButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(52)))));
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Bars;
-            this.iconButton4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(149)))), ((int)(((byte)(183)))));
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.IconSize = 30;
-            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.iconButton4.Location = new System.Drawing.Point(162, 0);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.iconButton4.Size = new System.Drawing.Size(58, 50);
-            this.iconButton4.TabIndex = 6;
-            this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton4.UseVisualStyleBackColor = false;
-            this.iconButton4.Click += new System.EventHandler(this.IconButton4_Click);
             // 
             // nameCl
             // 
@@ -330,6 +309,28 @@
             this.Privet.TabIndex = 8;
             this.Privet.Text = "Приветсвуем";
             // 
+            // iconButton4
+            // 
+            this.iconButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(52)))));
+            this.iconButton4.FlatAppearance.BorderSize = 0;
+            this.iconButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(52)))), ((int)(((byte)(183)))));
+            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton4.Font = new System.Drawing.Font("Georgia", 11.25F);
+            this.iconButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(52)))));
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Bars;
+            this.iconButton4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(149)))), ((int)(((byte)(183)))));
+            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton4.IconSize = 30;
+            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.iconButton4.Location = new System.Drawing.Point(162, 0);
+            this.iconButton4.Name = "iconButton4";
+            this.iconButton4.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.iconButton4.Size = new System.Drawing.Size(58, 50);
+            this.iconButton4.TabIndex = 6;
+            this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton4.UseVisualStyleBackColor = false;
+            this.iconButton4.Click += new System.EventHandler(this.IconButton4_Click);
+            // 
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(60)))));
@@ -343,20 +344,29 @@
             this.rjDropdownMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(52)))));
             this.rjDropdownMenu1.IsMainMenu = false;
             this.rjDropdownMenu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.настройкиToolStripMenuItem});
+            this.настройкиToolStripMenuItem,
+            this.добавитьСтраховщикаToolStripMenuItem});
             this.rjDropdownMenu1.MenuItemHeight = 25;
             this.rjDropdownMenu1.MenuItemTextColor = System.Drawing.Color.Empty;
             this.rjDropdownMenu1.Name = "rjDropdownMenu1";
             this.rjDropdownMenu1.PrimaryColor = System.Drawing.Color.Empty;
-            this.rjDropdownMenu1.Size = new System.Drawing.Size(135, 26);
+            this.rjDropdownMenu1.Size = new System.Drawing.Size(203, 70);
             // 
             // настройкиToolStripMenuItem
             // 
             this.настройкиToolStripMenuItem.Image = global::Osk.Properties.Resources.gear20;
             this.настройкиToolStripMenuItem.Name = "настройкиToolStripMenuItem";
-            this.настройкиToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.настройкиToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.настройкиToolStripMenuItem.Text = "Настройки";
             this.настройкиToolStripMenuItem.Click += new System.EventHandler(this.НастройкиToolStripMenuItem_Click);
+            // 
+            // добавитьСтраховщикаToolStripMenuItem
+            // 
+            this.добавитьСтраховщикаToolStripMenuItem.Image = global::Osk.Properties.Resources.add20;
+            this.добавитьСтраховщикаToolStripMenuItem.Name = "добавитьСтраховщикаToolStripMenuItem";
+            this.добавитьСтраховщикаToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.добавитьСтраховщикаToolStripMenuItem.Text = "Добавить страховщика";
+            this.добавитьСтраховщикаToolStripMenuItem.Click += new System.EventHandler(this.ДобавитьСтраховщикаToolStripMenuItem_Click);
             // 
             // Menu
             // 
@@ -409,5 +419,6 @@
         private System.Windows.Forms.Label Privet;
         private RJControls.RJDropdownMenu rjDropdownMenu1;
         private System.Windows.Forms.ToolStripMenuItem настройкиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem добавитьСтраховщикаToolStripMenuItem;
     }
 }

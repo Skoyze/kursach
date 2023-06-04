@@ -256,6 +256,8 @@ namespace CustomControls.Forms
                 }
                 else
                 {
+                    MessageBox.Show(Text = "Новый страховой договор добавлен!");
+
                     adapter.SelectCommand = command;
 
                     adapter.Fill(table);

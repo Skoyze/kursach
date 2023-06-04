@@ -26,7 +26,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationRevision>5</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -108,6 +108,12 @@
     <Compile Include="DataStrx.cs" />
     <Compile Include="Datebase.cs" />
     <Compile Include="FlatColors.cs" />
+    <Compile Include="Forms\FormAddStrx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAddStrx.Designer.cs">
+      <DependentUpon>FormAddStrx.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormClear.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -236,6 +242,9 @@
       <DependentUpon>FormToggleButton.cs</DependentUpon>
     </Compile>
     <Compile Include="ThemeColor.cs" />
+    <EmbeddedResource Include="Forms\FormAddStrx.resx">
+      <DependentUpon>FormAddStrx.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormClear.resx">
       <DependentUpon>FormClear.cs</DependentUpon>
     </EmbeddedResource>
@@ -310,6 +319,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="icon\add20.png" />
+    <Content Include="icon\add40.png" />
     <Content Include="icon\gear.png" />
     <Content Include="icon\gear20.png" />
     <Content Include="icon\Login.png" />

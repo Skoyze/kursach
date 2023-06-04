@@ -26,6 +26,26 @@ namespace CustomControls.Forms
         private void FormGearUser_Load(object sender, EventArgs e)
         {
             labelLogin.Text = DataBank.TextFio;
+            if (labelLogin.Text == "AlexandrovaTA")
+            {
+                labelNomer.Text = "89371265732";
+                labelMail.Text = "yesno@mail.ru";
+            }
+            else if (labelLogin.Text == "RomanovDI")
+            {
+                labelNomer.Text = "89171547423";
+                labelMail.Text = "donot@mail.ru";
+            }
+            else if (labelLogin.Text == "ZaxarovaOV")
+            {
+                labelNomer.Text = "89272685124";
+                labelMail.Text = "ohmy@mal.ru";
+            }
+            else if (labelLogin.Text == "1")
+            {
+                labelNomer.Text = "89546257998";
+                labelMail.Text = "sheesh@mail.ru";
+            }
         }
 
         private void RjButton1_Click(object sender, EventArgs e)
@@ -34,6 +54,8 @@ namespace CustomControls.Forms
             
             if (labelLogin.Text == "AlexandrovaTA")
             {
+
+
                 String PassChange = passChangeBox.Texts;
 
                 Datebase db = new Datebase();

@@ -2,6 +2,7 @@
 using CustomControls.RJControls;
 using CustomControls.Testing;
 using Microsoft.Win32;
+using Osk.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -169,18 +170,28 @@ namespace CustomControls
             {
                 DataBank.TextFio = nameCl.Text;
                 nameCl.Text = "Дмитрий!";
+                добавитьСтраховщикаToolStripMenuItem.Visible = false;
             }
 
             if (nameCl.Text == "AlexandrovaTA")
             {
                 DataBank.TextFio = nameCl.Text;
                 nameCl.Text = "Татьяна!";
+                добавитьСтраховщикаToolStripMenuItem.Visible = false;
             }
 
             if (nameCl.Text == "ZaxarovaOV")
             {
                 DataBank.TextFio = nameCl.Text;
                 nameCl.Text = "Ольга!";
+                добавитьСтраховщикаToolStripMenuItem.Visible = false;
+            }
+            
+            if (nameCl.Text == "Admin")
+            {
+                DataBank.TextFio = nameCl.Text;
+                nameCl.Text = "Администратор!";
+                добавитьСтраховщикаToolStripMenuItem.Visible = true;
             }
         }
 
@@ -238,6 +249,12 @@ namespace CustomControls
         private void CloseButton_MouseDown(object sender, MouseEventArgs e)
         {
             CloseButton.ForeColor = Color.FromArgb(41, 49, 51);
+        }
+
+        private void ДобавитьСтраховщикаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenNewForm(new FormAddStrx(), sender);
+            closeFormButton.Show();
         }
     }
 }
